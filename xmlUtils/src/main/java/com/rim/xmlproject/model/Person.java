@@ -6,35 +6,25 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "person")
-@XmlAccessorType (XmlAccessType.NONE)
+@XmlAccessorType(XmlAccessType.NONE)
 public class Person {
 
-	@XmlElement(name="name")
+	@XmlElement(name = "name")
 	private String name;
-	@XmlElement(name="surname")
+	@XmlElement(name = "surname")
 	private String surname;
-	@XmlElement(name="phone")
+	@XmlElement(name = "phone")
 	private String phone;
-	@XmlElement(name="zipcode")
+	@XmlElement(name = "zipcode")
 	private String zipcode;
-	@XmlElement(name="cellphone")
+	@XmlElement(name = "cellphone")
 	private String cellphone;
-	@XmlElement(name="city")
+	@XmlElement(name = "city")
 	private String city;
-
 
 	public String getName() {
 		return name;
 	}
-
-	public Person() {
-
-	}
-
-//	public Person(String name) {
-//
-//		this.name = name;
-//	}
 
 	public void setName(String name) {
 		this.name = name;

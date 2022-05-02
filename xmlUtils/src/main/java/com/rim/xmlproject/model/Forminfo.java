@@ -10,25 +10,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Forminfo {
 	@XmlElement
 	private String id;
-	
-	@XmlElement(name="form")
+
+	@XmlElement(name = "form")
 	private Form form;
-	
-	
-	@XmlElement(name="person")
+
+	@XmlElement(name = "person")
 	private Person person;
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-
-
-
 
 	public Forminfo() {
 
@@ -37,10 +24,18 @@ public class Forminfo {
 	public Forminfo(String id) {
 		this.id = id;
 	}
-	
+
 	public Forminfo(String id, Person person) {
 		this.id = id;
 		this.person = person;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public Person getPerson() {
@@ -63,8 +58,5 @@ public class Forminfo {
 	public String toString() {
 		return "Forminfo [id=" + id + ", form=" + form + ", person=" + person + "]";
 	}
-
-
-
 
 }

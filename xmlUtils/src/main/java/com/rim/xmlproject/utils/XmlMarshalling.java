@@ -1,17 +1,7 @@
 package com.rim.xmlproject.utils;
 
-import java.io.File;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-
-
 public class XmlMarshalling {
-	
-	
+
 	public void marshalling() {
 //		try {
 //			Cliente c1 = new Cliente(12345678, "Pepe", "Pérez Martínez", "pepe@sincorreo.es", "+1555123456",
