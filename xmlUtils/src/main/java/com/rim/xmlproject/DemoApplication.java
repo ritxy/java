@@ -3,6 +3,7 @@ package com.rim.xmlproject;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.rim.xmlproject.utils.XmlMarshalling;
 import com.rim.xmlproject.utils.XmlUnmarshalling;
 
 @SpringBootApplication
@@ -10,6 +11,9 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		
+		XmlMarshalling xmlMarshalling = new XmlMarshalling();
+		xmlMarshalling.marshalling();
 		
 		XmlUnmarshalling unmarshallingFromFile = new XmlUnmarshalling();
 		unmarshallingFromFile.getXmlDataFromFile();
@@ -19,3 +23,4 @@ public class DemoApplication {
 	}
 
 }
+
